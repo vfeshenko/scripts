@@ -5,7 +5,7 @@ then
         exit 1
 fi
 
-EXIST=$(exec ./backup-exist.sh $1)
+EXIST=$(exec backup-exist $1)
 COUNT=$(echo -n "$EXIST" | grep -c '^')
 
 if [[ $EXIST == $(echo -e "\E[31mNONE\E[0m") ]]
