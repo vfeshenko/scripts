@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -$# -eq 0 ] 
 then 
-        echo -e "\E[34mUsage: ./restore <VM_id>\E[0m"
+        echo -e "\E[34mUsage: restore <vmid>\E[0m"
         exit 1
 fi
 
